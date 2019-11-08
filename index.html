@@ -2,6 +2,23 @@
 
 <html lang="en">
 	<head>
+		<script>
+			// Create blinking title
+			function blink()
+			{
+				let header = document.querySelector('header');
+				if (header.style.visibility == 'hidden')
+				{
+					header.style.visibility = 'visible';
+				}
+				else
+				{
+					header.style.visibility = 'hidden';
+				}
+			}
+			window.setInterval(blink, 1000);
+		</script>
+		<!-- Declare style (using ID's and elements) -->
 		<style>
 			header{
   				text-shadow: 2px 2px pink;
@@ -9,6 +26,9 @@
 			}
 			body{
 				text-align: center;
+			}
+			#tag{
+				background-color: lavender;
 			}
   		</style>
 		<title>Hello</title>
@@ -19,13 +39,17 @@
 				Very creative website
 			</h1>
 		</header>
+		<!--  links to two other pages -->
 		<main>
-			<a href="page1.html">Page 1</a>
-			<br>
-			<a href="page2.html">Page 2</a>
+			<p id="tag">
+				<a href="page1.html">Page 1</a>
+			</p>
+			<p id="tag">
+				<a href="page2.html">Page 2</a>
+			</p>
 		</main>
 		<footer>
-			-ProblemSet8
+			ProblemSet8 <br> -Jee Whan Yoon
 		</footer>
 	</body>
 </html>

@@ -6,14 +6,20 @@
 	5. a
     6. h1-h6
     7. audio
+    8. script
+    9. style
+    10. link
 
 5 different CSS selectors
     1. class (.bg)
     2. external CSS
-    3. tag? 
+    3. directly to tag
+    4. ID (#tag)
+    5. element
 
 5 different CSS properties
     1. font-size
     2. text-align
     3. background-color
     4. letter-spacing
+    5. text-shadow  
